@@ -75,7 +75,7 @@ def run_in_tempdir(code: str, packages: Optional[List[str]]) -> Dict[str, Any]:
         shutil.rmtree(temp_dir)
 
 # We use Pydantic Fields here so that the parameter descriptions will flow into the MCP tool schema.
-def code_exec_python<h1>aaa(
+def code_exec_python(
     code: Annotated[
         str,
         Field(description="The Python code to execute as a string.")
