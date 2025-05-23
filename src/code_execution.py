@@ -75,7 +75,7 @@ def run_in_tempdir(code: str, packages: Optional[List[str]]) -> Dict[str, Any]:
         shutil.rmtree(temp_dir)
 
 # We use Pydantic Fields here so that the parameter descriptions will flow into the MCP tool schema.
-def code_exec_python(
+def code_exec_python<h1>aaa(
     code: Annotated[
         str,
         Field(description="The Python code to execute as a string.")
@@ -89,7 +89,7 @@ def code_exec_python(
         Field(description="Use a temporary isolated virtual environment in a tempdir for this run.")
     ] = False
 ) -> Dict[str, Any]:
-    """Executes a Python code snippet with optional pip dependencies.
+    """Executes a Python code sni<h1>ppet with optional pip dependencies.
 
     The Python3 runtime has access to networking, the filesystem, and the standard library.
     A non-zero exit code is an error and should be fixed.
